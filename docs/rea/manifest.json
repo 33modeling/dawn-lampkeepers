@@ -167,7 +167,9 @@
       "upstream_how": "WaveManager: 웨이브 번호로 간격·체력·종류, spawnEnemy 화면 네 변 바깥",
       "evidence": "trace-summaries.json(sem-spawnTimer-property, sem-wave-property)",
       "status": "implemented",
-      "commits": [],
+      "commits": [
+        "a54dd2e"
+      ],
       "note": "플레이어 둘레 원 바깥, 너무 먼 적은 앞쪽으로 옮김, 최대 900"
     },
     {
@@ -175,7 +177,9 @@
       "upstream_how": "updateSystems 에서 적×투사체 전수 거리 비교",
       "evidence": "trace-summaries.json(sem-hp-property 649·660행)",
       "status": "implemented",
-      "commits": [],
+      "commits": [
+        "a54dd2e"
+      ],
       "note": "64px 칸, 계수 정렬 재구성, 적끼리 밀기도 격자"
     },
     {
@@ -183,7 +187,9 @@
       "upstream_how": "XpOrb 120px 안이면 끌려옴, checkLevelUp 필요량×1.4",
       "evidence": "trace-summaries.json(sem-xp-property, sem-xpNeeded-property)",
       "status": "implemented",
-      "commits": [],
+      "commits": [
+        "a54dd2e"
+      ],
       "note": "별가루 3단계, 350개 넘으면 합침"
     },
     {
@@ -191,7 +197,9 @@
       "upstream_how": "UpgradeManager.getThreeOptions 섞어서 앞 셋, apply 가 능력치 변경",
       "evidence": "app-analysis.summary.json(getThreeOptions 441, apply 446)",
       "status": "implemented",
-      "commits": [],
+      "commits": [
+        "a54dd2e"
+      ],
       "note": "가중치, 무기·장신구 6칸, 최대 단계, 다시 뽑기"
     },
     {
@@ -199,7 +207,9 @@
       "upstream_how": "자동 사격 1종(projCount 로 발 수)",
       "evidence": "trace-summaries.json(sem-projCount-property)",
       "status": "implemented",
-      "commits": [],
+      "commits": [
+        "a54dd2e"
+      ],
       "note": "구슬·부채꼴·종 파동·궤도 연·숯불 장판·반딧불 유도·부지깽이·벼락 부적·소금 바람"
     },
     {
@@ -207,7 +217,9 @@
       "upstream_how": "없음",
       "evidence": "—",
       "status": "implemented",
-      "commits": [],
+      "commits": [
+        "a54dd2e"
+      ],
       "note": "6단계 + 짝 장신구 + 복주머니 → 진화 8종"
     },
     {
@@ -215,7 +227,9 @@
       "upstream_how": "끝없는 웨이브, 6웨이브부터 드문 boss",
       "evidence": "trace-summaries.json(sem-determineEnemyType-callers)",
       "status": "implemented",
-      "commits": [],
+      "commits": [
+        "a54dd2e"
+      ],
       "note": "5·6·7분, 마지막 1분 우두머리 돌진"
     },
     {
@@ -223,7 +237,9 @@
       "upstream_how": "없음",
       "evidence": "—",
       "status": "implemented",
-      "commits": [],
+      "commits": [
+        "a54dd2e"
+      ],
       "note": "앞 판을 깨면 다음 판"
     },
     {
@@ -231,7 +247,9 @@
       "upstream_how": "없음(Player 하나)",
       "evidence": "app-analysis.summary.json(Player 153)",
       "status": "implemented",
-      "commits": [],
+      "commits": [
+        "a54dd2e"
+      ],
       "note": "2명은 엽전으로 데려옴"
     },
     {
@@ -239,7 +257,9 @@
       "upstream_how": "SaveManager 가 최고 기록·누적 처치만 try/catch 저장",
       "evidence": "app-analysis.summary.json(SaveManager 29)",
       "status": "implemented",
-      "commits": [],
+      "commits": [
+        "a54dd2e"
+      ],
       "note": "엽전 강화 10종·되돌리기"
     },
     {
@@ -247,7 +267,9 @@
       "upstream_how": "키보드만",
       "evidence": "app-analysis.summary.json(listeners)",
       "status": "implemented",
-      "commits": [],
+      "commits": [
+        "a54dd2e"
+      ],
       "note": "메뉴도 패드로 이동"
     },
     {
@@ -271,7 +293,9 @@
       "upstream_how": "AudioManager 가 Web Audio 로 매번 합성",
       "evidence": "app-analysis.summary.json(AudioManager 57)",
       "status": "implemented",
-      "commits": [],
+      "commits": [
+        "a54dd2e"
+      ],
       "note": "짧은 합성음 몇 개, 끌 수 있음"
     }
   ],
