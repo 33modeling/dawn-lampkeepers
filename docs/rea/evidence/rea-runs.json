@@ -1,0 +1,238 @@
+{
+ "tool": "rea-agents 6.8.0 (npx, 전역 설치·MCP 설정·setup 없음, nice -n 10)",
+ "target": {
+  "repo": "https://github.com/Amrendra-gupta/VOID-SURVIVORS",
+  "commit": "1e53cf9280ac073eddb1b7ab4da104c13d6c2952",
+  "license": "MIT",
+  "files": [
+   "script.js",
+   "index.html",
+   "style.css",
+   "README.md",
+   "LICENSE"
+  ]
+ },
+ "note": "큰 결과는 저장소에 넣지 않았다(bytes·sha256 만). scripts/run-rea.sh 로 다시 만들어 대조한다.",
+ "runs": [
+  {
+   "label": "ref-void",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 import-reference-source <target> --format json",
+   "exit": 0,
+   "seconds": 1.7,
+   "output": {
+    "file": "ref-source.json",
+    "bytes": 1849,
+    "sha256": "ceaaa0e567fa52f5d4d3834a155bb0d6f641ea6953a972bf42268c16bf0c4e2c"
+   }
+  },
+  {
+   "label": "ref-void-summary",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 import-reference-source <target> --detail summary --outline-depth 3 --format json",
+   "exit": 0,
+   "seconds": 1.7,
+   "output": {
+    "file": "ref-source.summary.json",
+    "bytes": 2170,
+    "sha256": "75315defdb1730241db0eb3f72eb002256a8f25b5b92d629a71dbdec677fb62b"
+   }
+  },
+  {
+   "label": "app-void",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 analyze-javascript-application <target> --source-paths-json <work>/selection.json --max-semantic-nodes 300000 --max-semantic-unknowns 300000 --format json",
+   "exit": 0,
+   "seconds": 3.9,
+   "output": {
+    "file": "app.json",
+    "bytes": 4822017,
+    "sha256": "622cd66f51ad136b0fb12cff2119e5f1c25c2dc94107d9e2c02d001d9a6fc909"
+   }
+  },
+  {
+   "label": "view-summary",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 inspect-analysis-view view-summary.json --format json",
+   "exit": 0,
+   "seconds": 2.3,
+   "output": {
+    "file": "app-summary-view.json",
+    "bytes": 11472,
+    "sha256": "22a7eec3b6e607a23bdb26c5c101d51eaa52772bea08a1c91aa442d04d8b8815"
+   }
+  },
+  {
+   "label": "view-modules",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 inspect-analysis-view view-modules.json --format json",
+   "exit": 0,
+   "seconds": 2.4,
+   "output": {
+    "file": "app-modules-view.json",
+    "bytes": 9474,
+    "sha256": "6cc0371fb323bde929eab5770ccd97751302c6ecd80322463deecba72e050e66"
+   }
+  },
+  {
+   "label": "feature-script",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-application-feature trace-feature-script-input.json --format json",
+   "exit": 0,
+   "seconds": 2.1,
+   "output": {
+    "file": "trace-feature-script.json",
+    "bytes": 24825,
+    "sha256": "3f31762f04ab1c25c406c5d0c8fab687ebe3f40f159cbd279ad04b66abccbcdc"
+   }
+  },
+  {
+   "label": "sem-updateSystems-callers",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-javascript-semantics trace-semantics-updateSystems-callers-input.json --format json",
+   "exit": 0,
+   "seconds": 2.4,
+   "output": {
+    "file": "trace-semantics-updateSystems-callers.json",
+    "bytes": 25821,
+    "sha256": "cbe6cf6e4585886c428678f87fd528111aa992b468ebfa3660e34d5821ce3e5c"
+   }
+  },
+  {
+   "label": "sem-fireWeapon-callers",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-javascript-semantics trace-semantics-fireWeapon-callers-input.json --format json",
+   "exit": 0,
+   "seconds": 2.4,
+   "output": {
+    "file": "trace-semantics-fireWeapon-callers.json",
+    "bytes": 11716,
+    "sha256": "20d427251310ececb0db7d3b5eda01b69e5c40233e91645338dadab38c63e0df"
+   }
+  },
+  {
+   "label": "sem-getThreeOptions-callers",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-javascript-semantics trace-semantics-getThreeOptions-callers-input.json --format json",
+   "exit": 0,
+   "seconds": 2.0,
+   "output": {
+    "file": "trace-semantics-getThreeOptions-callers.json",
+    "bytes": 8078,
+    "sha256": "e9486a5718f5daec5c66d7977e9279ed1497a83a4ed63a74aafcc3d8e232d6b7"
+   }
+  },
+  {
+   "label": "sem-apply-callers",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-javascript-semantics trace-semantics-apply-callers-input.json --format json",
+   "exit": 0,
+   "seconds": 2.2,
+   "output": {
+    "file": "trace-semantics-apply-callers.json",
+    "bytes": 8058,
+    "sha256": "f0a516d10caa8e2f838646a3bc987f81a48097b187e34103089f19f02d53a6ef"
+   }
+  },
+  {
+   "label": "sem-determineEnemyType-callers",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-javascript-semantics trace-semantics-determineEnemyType-callers-input.json --format json",
+   "exit": 0,
+   "seconds": 2.2,
+   "output": {
+    "file": "trace-semantics-determineEnemyType-callers.json",
+    "bytes": 7499,
+    "sha256": "0d6c29ca40dcc62f2d33898532241cc4f7e848ecce479e129e8509be279cf404"
+   }
+  },
+  {
+   "label": "sem-getSpawnInterval-callers",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-javascript-semantics trace-semantics-getSpawnInterval-callers-input.json --format json",
+   "exit": 0,
+   "seconds": 2.2,
+   "output": {
+    "file": "trace-semantics-getSpawnInterval-callers.json",
+    "bytes": 7495,
+    "sha256": "8ce22d416dd17fb7061ea13eb973253cb2bb1953fb65123ad895d85bcd3039e7"
+   }
+  },
+  {
+   "label": "sem-spawnEnemy-callers",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-javascript-semantics trace-semantics-spawnEnemy-callers-input.json --format json",
+   "exit": 0,
+   "seconds": 2.2,
+   "output": {
+    "file": "trace-semantics-spawnEnemy-callers.json",
+    "bytes": 12353,
+    "sha256": "c32b5933acad84a0f451f3e126f71d0187f4be30eaca3f8c58467b4f0d7d3e61"
+   }
+  },
+  {
+   "label": "sem-xp-property",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-javascript-semantics trace-semantics-xp-property-input.json --format json",
+   "exit": 0,
+   "seconds": 2.5,
+   "output": {
+    "file": "trace-semantics-xp-property.json",
+    "bytes": 20787,
+    "sha256": "96e4fb04324189d45c3566969f1ccbfccff1235114a5419bf3111a450b75d463"
+   }
+  },
+  {
+   "label": "sem-xpNeeded-property",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-javascript-semantics trace-semantics-xpNeeded-property-input.json --format json",
+   "exit": 0,
+   "seconds": 2.2,
+   "output": {
+    "file": "trace-semantics-xpNeeded-property.json",
+    "bytes": 21013,
+    "sha256": "535b883561d4d2329236c2b8fdca4a8fefc6f091be43de22c72598f3b3dd324d"
+   }
+  },
+  {
+   "label": "sem-projCount-property",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-javascript-semantics trace-semantics-projCount-property-input.json --format json",
+   "exit": 0,
+   "seconds": 2.2,
+   "output": {
+    "file": "trace-semantics-projCount-property.json",
+    "bytes": 20181,
+    "sha256": "891872ed47f291e891478589522ddcceba0f99e5dd43e9c21d1730ed66823254"
+   }
+  },
+  {
+   "label": "sem-critChance-property",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-javascript-semantics trace-semantics-critChance-property-input.json --format json",
+   "exit": 0,
+   "seconds": 2.1,
+   "output": {
+    "file": "trace-semantics-critChance-property.json",
+    "bytes": 16869,
+    "sha256": "085c5ddad4cc41b839967c0b879f7d90bcafe63f19fb7bb304e905a893fa040b"
+   }
+  },
+  {
+   "label": "sem-spawnTimer-property",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-javascript-semantics trace-semantics-spawnTimer-property-input.json --format json",
+   "exit": 0,
+   "seconds": 2.1,
+   "output": {
+    "file": "trace-semantics-spawnTimer-property.json",
+    "bytes": 16331,
+    "sha256": "97a479fb8b922b62211d9b5e91f2883154571cb04f11db5065eb2073f145d56d"
+   }
+  },
+  {
+   "label": "sem-wave-property",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-javascript-semantics trace-semantics-wave-property-input.json --format json",
+   "exit": 0,
+   "seconds": 2.2,
+   "output": {
+    "file": "trace-semantics-wave-property.json",
+    "bytes": 27307,
+    "sha256": "b2bf8a98f2d91dd936f2c437bd7fce5e295cd5e9c248d66d2fac1217ec5db64c"
+   }
+  },
+  {
+   "label": "sem-hp-property",
+   "command": "nice -n 10 npx -y rea-agents@6.8.0 trace-javascript-semantics trace-semantics-hp-property-input.json --format json",
+   "exit": 0,
+   "seconds": 2.0,
+   "output": {
+    "file": "trace-semantics-hp-property.json",
+    "bytes": 47178,
+    "sha256": "7e036104249262eb7f59fe21a23e5d74b28e14f6acdfb5f146fa9ef24b0652a7"
+   }
+  }
+ ]
+}

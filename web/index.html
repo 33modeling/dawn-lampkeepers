@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<meta name="theme-color" content="#120c22">
+<title>새벽 등불지기</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<canvas id="game" aria-label="게임 화면"></canvas>
+<div id="stick" class="stick" hidden><div id="knob" class="knob"></div></div>
+
+<div id="hud" class="hud" hidden>
+  <div class="xpbar"><div id="xpfill"></div><span id="lvl">Lv 1</span></div>
+  <div class="hudrow">
+    <span id="timer" class="timer">5:00</span>
+    <span id="kills">처치 0</span>
+    <span id="coins">엽전 0</span>
+    <button id="pauseBtn" class="iconbtn" aria-label="잠깐 멈춤">Ⅱ</button>
+  </div>
+  <div id="slots" class="slots"></div>
+  <div id="bossbar" class="bossbar" hidden><span id="bossname"></span><div id="bossfill"></div></div>
+</div>
+<div id="toast" class="toast" hidden></div>
+
+<section id="title" class="screen">
+  <h1>새벽 등불지기</h1>
+  <p class="lead">해가 뜨지 않는 긴 밤, 그을음 무리가 마을로 몰려온다.<br>등불을 들고 새벽 종이 울릴 때까지 버텨라.</p>
+  <div class="menu">
+    <button id="toSelect" class="big">시작하기</button>
+    <button id="toShop">영구 강화</button>
+    <button id="toHelp">하는 법</button>
+  </div>
+  <p id="purse" class="purse"></p>
+</section>
+
+<section id="select" class="screen" hidden>
+  <h2>등불지기 고르기</h2>
+  <div id="charList" class="cards"></div>
+  <h2>판 고르기</h2>
+  <div id="stageList" class="cards"></div>
+  <div class="menu row">
+    <button id="selBack">뒤로</button>
+    <button id="startRun" class="big">출발</button>
+  </div>
+</section>
+
+<section id="shop" class="screen" hidden>
+  <h2>영구 강화</h2>
+  <p id="shopPurse" class="purse"></p>
+  <div id="shopList" class="cards"></div>
+  <div class="menu row">
+    <button id="shopBack">뒤로</button>
+    <button id="refund">모두 되돌리기</button>
+  </div>
+</section>
+
+<section id="help" class="screen" hidden>
+  <h2>하는 법</h2>
+  <ul class="help">
+    <li>움직이기만 하면 무기가 저절로 공격한다. 키보드 WASD·방향키, 휴대폰은 화면을 눌러 끌기(가상 조이스틱), 게임패드 왼쪽 스틱.</li>
+    <li>그을음을 물리치면 떨어지는 <b>별가루</b>를 모아 레벨을 올린다. 레벨이 오를 때마다 셋 중 하나를 고른다(키 1·2·3, 패드 D패드+A).</li>
+    <li>무기는 6단계까지 오른다. 최대 단계 무기와 짝이 맞는 장신구를 갖고 <b>복주머니</b>(큰 그을음·보스가 떨어뜨림)를 열면 무기가 <b>진화</b>한다.</li>
+    <li>판 마지막 1분에 우두머리가 나온다. 새벽(시간 0)까지 버티면 판을 깬다. 깬 판 다음 판이 열린다.</li>
+    <li>엽전으로 영구 강화를 사고 새 등불지기를 데려온다. 진행은 이 기기에만 저장된다.</li>
+  </ul>
+  <h3>진화 짝</h3>
+  <div id="evoList" class="evo"></div>
+  <div class="menu"><button id="helpBack">뒤로</button></div>
+</section>
+
+<section id="levelup" class="overlay" hidden>
+  <h2 id="luTitle">레벨 업!</h2>
+  <div id="choices" class="choices"></div>
+  <button id="reroll">다시 뽑기</button>
+</section>
+
+<section id="pause" class="overlay" hidden>
+  <h2>잠깐 멈춤</h2>
+  <div id="pauseInfo" class="pinfo"></div>
+  <div class="menu">
+    <button id="resume" class="big">계속</button>
+    <button id="soundBtn">소리 켬</button>
+    <button id="quit">그만두기</button>
+  </div>
+</section>
+
+<section id="result" class="overlay" hidden>
+  <h2 id="resTitle"></h2>
+  <div id="resBody" class="pinfo"></div>
+  <div class="menu">
+    <button id="again" class="big">다시 하기</button>
+    <button id="toMenu">처음으로</button>
+  </div>
+</section>
+
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>

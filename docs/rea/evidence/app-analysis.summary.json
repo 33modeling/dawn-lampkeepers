@@ -1,0 +1,641 @@
+{
+ "statistics": {
+  "relevant_files": 2,
+  "nested_asar_containers": 0,
+  "text_bytes_read": 29332,
+  "invalid_utf8_files": 0,
+  "parsed_javascript_files": 1,
+  "skipped_javascript_files": 0,
+  "visited_ast_nodes": 5529,
+  "findings": 2,
+  "modules": 0,
+  "parse_failures": 0
+ },
+ "node_kinds": {
+  "expression": 2123,
+  "call-site": 320,
+  "return-site": 38,
+  "property-slot": 184,
+  "function": 90,
+  "binding": 128,
+  "parameter": 78,
+  "module": 1,
+  "literal": 4,
+  "boundary": 1
+ },
+ "relations": 1936,
+ "unknowns": 1489,
+ "functions": [
+  {
+   "name": "lerp",
+   "line": 13
+  },
+  {
+   "name": "clamp",
+   "line": 14
+  },
+  {
+   "name": "rnd",
+   "line": 15
+  },
+  {
+   "name": "rndInt",
+   "line": 16
+  },
+  {
+   "name": "dist",
+   "line": 17
+  },
+  {
+   "name": "angle",
+   "line": 18
+  },
+  {
+   "name": "vecFromAngle",
+   "line": 24
+  },
+  {
+   "name": "SaveManager",
+   "line": 29
+  },
+  {
+   "name": "defaultSave",
+   "line": 32
+  },
+  {
+   "name": "load",
+   "line": 36
+  },
+  {
+   "name": "save",
+   "line": 45
+  },
+  {
+   "name": "AudioManager",
+   "line": 57
+  },
+  {
+   "name": "constructor",
+   "line": 58
+  },
+  {
+   "name": "init",
+   "line": 63
+  },
+  {
+   "name": "setVolume",
+   "line": 68
+  },
+  {
+   "name": "playShoot",
+   "line": 72
+  },
+  {
+   "name": "playHit",
+   "line": 90
+  },
+  {
+   "name": "playLevelUp",
+   "line": 108
+  },
+  {
+   "name": null,
+   "line": 112
+  },
+  {
+   "name": "playGameOver",
+   "line": 129
+  },
+  {
+   "name": "Player",
+   "line": 153
+  },
+  {
+   "name": "constructor",
+   "line": 154
+  },
+  {
+   "name": "update",
+   "line": 181
+  },
+  {
+   "name": "draw",
+   "line": 209
+  },
+  {
+   "name": "Enemy",
+   "line": 235
+  },
+  {
+   "name": "constructor",
+   "line": 236
+  },
+  {
+   "name": "update",
+   "line": 263
+  },
+  {
+   "name": "draw",
+   "line": 270
+  },
+  {
+   "name": "Projectile",
+   "line": 293
+  },
+  {
+   "name": "constructor",
+   "line": 294
+  },
+  {
+   "name": "update",
+   "line": 305
+  },
+  {
+   "name": "draw",
+   "line": 311
+  },
+  {
+   "name": "XpOrb",
+   "line": 323
+  },
+  {
+   "name": "constructor",
+   "line": 324
+  },
+  {
+   "name": "update",
+   "line": 333
+  },
+  {
+   "name": "draw",
+   "line": 347
+  },
+  {
+   "name": "Particle",
+   "line": 362
+  },
+  {
+   "name": "constructor",
+   "line": 363
+  },
+  {
+   "name": "update",
+   "line": 376
+  },
+  {
+   "name": "draw",
+   "line": 384
+  },
+  {
+   "name": "FloatingText",
+   "line": 395
+  },
+  {
+   "name": "constructor",
+   "line": 396
+  },
+  {
+   "name": "update",
+   "line": 407
+  },
+  {
+   "name": "draw",
+   "line": 413
+  },
+  {
+   "name": "UpgradeManager",
+   "line": 427
+  },
+  {
+   "name": "constructor",
+   "line": 428
+  },
+  {
+   "name": "getThreeOptions",
+   "line": 441
+  },
+  {
+   "name": null,
+   "line": 442
+  },
+  {
+   "name": "apply",
+   "line": 446
+  },
+  {
+   "name": "WaveManager",
+   "line": 460
+  },
+  {
+   "name": "constructor",
+   "line": 461
+  },
+  {
+   "name": "update",
+   "line": 468
+  },
+  {
+   "name": "getSpawnInterval",
+   "line": 476
+  },
+  {
+   "name": "getWaveFactor",
+   "line": 480
+  },
+  {
+   "name": "determineEnemyType",
+   "line": 484
+  },
+  {
+   "name": "Game",
+   "line": 496
+  },
+  {
+   "name": "constructor",
+   "line": 497
+  },
+  {
+   "name": null,
+   "line": 524
+  },
+  {
+   "name": "initInput",
+   "line": 527
+  },
+  {
+   "name": null,
+   "line": 528
+  },
+  {
+   "name": null,
+   "line": 529
+  },
+  {
+   "name": "initUI",
+   "line": 532
+  },
+  {
+   "name": null,
+   "line": 533
+  },
+  {
+   "name": null,
+   "line": 537
+  },
+  {
+   "name": null,
+   "line": 538
+  },
+  {
+   "name": null,
+   "line": 541
+  },
+  {
+   "name": "resizeCanvas",
+   "line": 546
+  },
+  {
+   "name": "updateMenuStats",
+   "line": 551
+  },
+  {
+   "name": "showScreen",
+   "line": 560
+  },
+  {
+   "name": null,
+   "line": 561
+  },
+  {
+   "name": "startRun",
+   "line": 565
+  },
+  {
+   "name": null,
+   "line": 593
+  },
+  {
+   "name": "loop",
+   "line": 596
+  },
+  {
+   "name": null,
+   "line": 608
+  },
+  {
+   "name": "updateSystems",
+   "line": 611
+  },
+  {
+   "name": "fireWeapon",
+   "line": 704
+  },
+  {
+   "name": "spawnEnemy",
+   "line": 740
+  },
+  {
+   "name": "checkLevelUp",
+   "line": 759
+  },
+  {
+   "name": "triggerUpgradeScreen",
+   "line": 771
+  },
+  {
+   "name": null,
+   "line": 777
+  },
+  {
+   "name": null,
+   "line": 785
+  },
+  {
+   "name": null,
+   "line": 795
+  },
+  {
+   "name": "renderActiveUpgrades",
+   "line": 804
+  },
+  {
+   "name": null,
+   "line": 808
+  },
+  {
+   "name": "updateHUD",
+   "line": 818
+  },
+  {
+   "name": "triggerGameOver",
+   "line": 837
+  },
+  {
+   "name": "spawnHitParticles",
+   "line": 860
+  },
+  {
+   "name": "spawnDeathParticles",
+   "line": 864
+  },
+  {
+   "name": "drawSystems",
+   "line": 868
+  },
+  {
+   "name": null,
+   "line": 916
+  }
+ ],
+ "top_property_paths": [
+  [
+   "y",
+   49
+  ],
+  [
+   "x",
+   49
+  ],
+  [
+   "r",
+   31
+  ],
+  [
+   "getElementById",
+   27
+  ],
+  [
+   "fillStyle",
+   17
+  ],
+  [
+   "save",
+   17
+  ],
+  [
+   "beginPath",
+   16
+  ],
+  [
+   "speed",
+   16
+  ],
+  [
+   "ctx.currentTime",
+   16
+  ],
+  [
+   "connect",
+   16
+  ],
+  [
+   "innerText",
+   14
+  ],
+  [
+   "arc",
+   14
+  ],
+  [
+   "life",
+   14
+  ],
+  [
+   "restore",
+   14
+  ],
+  [
+   "color",
+   13
+  ],
+  [
+   "damage",
+   11
+  ],
+  [
+   "player",
+   11
+  ],
+  [
+   "addEventListener",
+   11
+  ],
+  [
+   "hp",
+   11
+  ],
+  [
+   "fill",
+   11
+  ],
+  [
+   "timeElapsed",
+   10
+  ],
+  [
+   "draw",
+   10
+  ],
+  [
+   "innerHTML",
+   9
+  ],
+  [
+   "ctx",
+   9
+  ],
+  [
+   "type",
+   9
+  ],
+  [
+   "maxHp",
+   9
+  ],
+  [
+   "shadowBlur",
+   8
+  ],
+  [
+   "frequency.setValueAtTime",
+   8
+  ],
+  [
+   "gain.setValueAtTime",
+   8
+  ],
+  [
+   "start",
+   8
+  ],
+  [
+   "isCrit",
+   8
+  ],
+  [
+   "floor",
+   8
+  ],
+  [
+   "shadowColor",
+   8
+  ],
+  [
+   "score",
+   8
+  ],
+  [
+   "gain.exponentialRampToValueAtTime",
+   8
+  ],
+  [
+   "stop",
+   8
+  ],
+  [
+   "player.hp",
+   7
+  ],
+  [
+   "regenAccumulator",
+   7
+  ],
+  [
+   "kills",
+   7
+  ],
+  [
+   "wave",
+   7
+  ],
+  [
+   "player.xp",
+   6
+  ],
+  [
+   "stroke",
+   6
+  ],
+  [
+   "update",
+   6
+  ],
+  [
+   "isPaused",
+   6
+  ],
+  [
+   "toString",
+   6
+  ],
+  [
+   "vx",
+   6
+  ],
+  [
+   "padStart",
+   6
+  ],
+  [
+   "vy",
+   6
+  ],
+  [
+   "hpRegen",
+   6
+  ],
+  [
+   "volume",
+   6
+  ],
+  [
+   "isOver",
+   5
+  ],
+  [
+   "forEach",
+   5
+  ],
+  [
+   "lineWidth",
+   5
+  ],
+  [
+   "player.xpNeeded",
+   5
+  ],
+  [
+   "strokeStyle",
+   5
+  ],
+  [
+   "canvas.height",
+   5
+  ],
+  [
+   "lastTime",
+   5
+  ],
+  [
+   "fillRect",
+   5
+  ],
+  [
+   "min",
+   5
+  ],
+  [
+   "canvas.width",
+   5
+  ]
+ ],
+ "limitations": [
+  "Caller-selected source analysis leaves 1 inventoried files outside analysis scope. Inventory identity covers the complete artifact; relationships through unselected sources remain unknown.",
+  "CommonJS and ESM binding relationships were recovered from inert syntax and resolved only within the inventoried artifact container.",
+  "Graph coverage is incomplete; unavailable facts remain explicit and must not be read as absence.",
+  "JavaScript and HTML were parsed as inert text; bundle bootstrap code was never executed.",
+  "Static imports, entrypoints, workers, endpoints, and storage relationships do not prove runtime execution.",
+  "Static paths and relationships may remain unresolved when expressions are dynamic or obfuscated.",
+  "Webpack/Rspack factories were recovered from AST literals; REA did not invoke push handlers or bundle bootstrap code."
+ ]
+}

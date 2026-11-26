@@ -1,0 +1,133 @@
+{
+ "schema": "HistoricalSourceSummary",
+ "authority": "historical-reference",
+ "root_alias": "$REFERENCE_ROOT",
+ "manifest": {
+  "schema": "HistoricalSourceManifest",
+  "authority": "historical-reference",
+  "manifest_id": "hsm_5fc2fcd41bd235cef00b8ae378ef5aeed5be6aec97202ba8c8f0f11e6f237029",
+  "graph_sha256": "e6be9f19df47529536702955fdfe99a2b13f336ee77584fa59eb9c513d47b949",
+  "root_sha256": "9fbc74b8034dcd24e94817ccaa0fb3e6db37a4fc9bcc92e09d39102d03e0d9f2",
+  "inventory_state": "partial",
+  "entry_count": 5,
+  "relationship_count": 0
+ },
+ "inventory_state": "partial",
+ "provenance": {
+  "importer": "rea-agents",
+  "importer_version": "6.8.0",
+  "caller": "rea-cli"
+ },
+ "vcs": {
+  "kind": "git",
+  "head": "1e53cf9280ac073eddb1b7ab4da104c13d6c2952",
+  "dirty": null
+ },
+ "languages": [
+  "CSS",
+  "HTML",
+  "JavaScript",
+  "Markdown"
+ ],
+ "manifests": [],
+ "counts": {
+  "entries": 5,
+  "files": 5,
+  "directories": 0,
+  "symlinks": 0,
+  "unknown": 0,
+  "relationships": 0,
+  "parse_failures": 0,
+  "exclusions": 1
+ },
+ "file_content_states": {
+  "hashed": 5,
+  "redacted-secret": 0,
+  "excluded": 0,
+  "unreadable": 0,
+  "unknown": 0
+ },
+ "directory_tree_states": {
+  "enumerated": 0,
+  "partial": 0,
+  "excluded": 0,
+  "unreadable": 0,
+  "unknown": 0
+ },
+ "file_sizes": {
+  "known_bytes": "48294",
+  "unknown_file_count": 0
+ },
+ "exclusions": [
+  {
+   "path": ".git",
+   "entry_kind": "directory",
+   "reason": "default-ignored",
+   "pattern": ".git/"
+  }
+ ],
+ "limitations": [
+  "Path identity is revalidated around operations; Node lacks portable descriptor-relative openat traversal, so a syscall-boundary pathname race remains."
+ ],
+ "outline": {
+  "depth": 3,
+  "entries": [
+   {
+    "path": "LICENSE",
+    "kind": "file",
+    "language": null,
+    "size": 1071,
+    "content_state": "hashed",
+    "classifications": [
+     "documentation"
+    ],
+    "limitations": []
+   },
+   {
+    "path": "README.md",
+    "kind": "file",
+    "language": "Markdown",
+    "size": 4110,
+    "content_state": "hashed",
+    "classifications": [
+     "documentation"
+    ],
+    "limitations": []
+   },
+   {
+    "path": "index.html",
+    "kind": "file",
+    "language": "HTML",
+    "size": 3863,
+    "content_state": "hashed",
+    "classifications": [
+     "unknown"
+    ],
+    "limitations": []
+   },
+   {
+    "path": "script.js",
+    "kind": "file",
+    "language": "JavaScript",
+    "size": 29332,
+    "content_state": "hashed",
+    "classifications": [
+     "source"
+    ],
+    "limitations": []
+   },
+   {
+    "path": "style.css",
+    "kind": "file",
+    "language": "CSS",
+    "size": 9918,
+    "content_state": "hashed",
+    "classifications": [
+     "unknown"
+    ],
+    "limitations": []
+   }
+  ],
+  "omitted_entry_count": 0
+ }
+}

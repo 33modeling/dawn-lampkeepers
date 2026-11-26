@@ -1,0 +1,15 @@
+{
+  "name": "dawn-lampkeepers",
+  "version": "1.0.0",
+  "private": true,
+  "description": "새벽 등불지기 — 몰려오는 그을음 무리를 새벽까지 버티는 서바이버류 웹 게임(Canvas 2D, 빌드 의존성 없음)",
+  "type": "module",
+  "scripts": {
+    "test": "node --test --test-concurrency=2 tests/*.test.mjs",
+    "test:e2e": "node --test --test-concurrency=1 tests/e2e/*.e2e.mjs",
+    "build": "node scripts/build.mjs",
+    "serve": "node scripts/serve.mjs",
+    "sim": "node scripts/sim.mjs"
+  },
+  "license": "MIT"
+}

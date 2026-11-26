@@ -1,0 +1,288 @@
+{
+  "schema": "rea-analysis/v1",
+  "id": "void-survivors-dawn-lampkeepers",
+  "title": "VOID-SURVIVORS → 새벽 등불지기",
+  "analyzed_at": "2026-11-26",
+  "app": {
+    "slug": "dawn-lampkeepers",
+    "name": "새벽 등불지기 (Dawn Lampkeepers)",
+    "repo": "33modeling/dawn-lampkeepers",
+    "url": "https://github.com/33modeling/dawn-lampkeepers"
+  },
+  "target": {
+    "name": "Amrendra-gupta/VOID-SURVIVORS",
+    "source_url": "https://github.com/Amrendra-gupta/VOID-SURVIVORS",
+    "commit": "1e53cf9280ac073eddb1b7ab4da104c13d6c2952",
+    "license": "MIT",
+    "scope": "script.js·index.html·style.css·README.md·LICENSE 5개 파일(얕은 clone). 빌드·설치·실행 없음, 코드 옮기지 않음"
+  },
+  "rea": {
+    "version": "6.8.0",
+    "runs": [
+      {
+        "command": "import-reference-source",
+        "target": "ref-void",
+        "exit": 0,
+        "seconds": 1.7,
+        "result": "1,849 B, sha256 ceaaa0e567fa"
+      },
+      {
+        "command": "import-reference-source",
+        "target": "ref-void-summary",
+        "exit": 0,
+        "seconds": 1.7,
+        "result": "2,170 B, sha256 75315defdb17"
+      },
+      {
+        "command": "analyze-javascript-application",
+        "target": "app-void",
+        "exit": 0,
+        "seconds": 3.9,
+        "result": "4,822,017 B, sha256 622cd66f51ad"
+      },
+      {
+        "command": "inspect-analysis-view",
+        "target": "view-summary",
+        "exit": 0,
+        "seconds": 2.3,
+        "result": "11,472 B, sha256 22a7eec3b6e6"
+      },
+      {
+        "command": "inspect-analysis-view",
+        "target": "view-modules",
+        "exit": 0,
+        "seconds": 2.4,
+        "result": "9,474 B, sha256 6cc0371fb323"
+      },
+      {
+        "command": "trace-application-feature",
+        "target": "feature-script",
+        "exit": 0,
+        "seconds": 2.1,
+        "result": "24,825 B, sha256 3f31762f04ab"
+      },
+      {
+        "command": "trace-javascript-semantics",
+        "target": "sem-updateSystems-callers",
+        "exit": 0,
+        "seconds": 2.4,
+        "result": "25,821 B, sha256 cbe6cf6e4585"
+      },
+      {
+        "command": "trace-javascript-semantics",
+        "target": "sem-fireWeapon-callers",
+        "exit": 0,
+        "seconds": 2.4,
+        "result": "11,716 B, sha256 20d427251310"
+      },
+      {
+        "command": "trace-javascript-semantics",
+        "target": "sem-getThreeOptions-callers",
+        "exit": 0,
+        "seconds": 2.0,
+        "result": "8,078 B, sha256 e9486a5718f5"
+      },
+      {
+        "command": "trace-javascript-semantics",
+        "target": "sem-apply-callers",
+        "exit": 0,
+        "seconds": 2.2,
+        "result": "8,058 B, sha256 f0a516d10caa"
+      },
+      {
+        "command": "trace-javascript-semantics",
+        "target": "sem-determineEnemyType-callers",
+        "exit": 0,
+        "seconds": 2.2,
+        "result": "7,499 B, sha256 0d6c29ca40dc"
+      },
+      {
+        "command": "trace-javascript-semantics",
+        "target": "sem-getSpawnInterval-callers",
+        "exit": 0,
+        "seconds": 2.2,
+        "result": "7,495 B, sha256 8ce22d416dd1"
+      },
+      {
+        "command": "trace-javascript-semantics",
+        "target": "sem-spawnEnemy-callers",
+        "exit": 0,
+        "seconds": 2.2,
+        "result": "12,353 B, sha256 c32b5933acad"
+      },
+      {
+        "command": "trace-javascript-semantics",
+        "target": "sem-xp-property",
+        "exit": 0,
+        "seconds": 2.5,
+        "result": "20,787 B, sha256 96e4fb043241"
+      },
+      {
+        "command": "trace-javascript-semantics",
+        "target": "sem-xpNeeded-property",
+        "exit": 0,
+        "seconds": 2.2,
+        "result": "21,013 B, sha256 535b883561d4"
+      },
+      {
+        "command": "trace-javascript-semantics",
+        "target": "sem-projCount-property",
+        "exit": 0,
+        "seconds": 2.2,
+        "result": "20,181 B, sha256 891872ed47f2"
+      },
+      {
+        "command": "trace-javascript-semantics",
+        "target": "sem-critChance-property",
+        "exit": 0,
+        "seconds": 2.1,
+        "result": "16,869 B, sha256 085c5ddad4cc"
+      },
+      {
+        "command": "trace-javascript-semantics",
+        "target": "sem-spawnTimer-property",
+        "exit": 0,
+        "seconds": 2.1,
+        "result": "16,331 B, sha256 97a479fb8b92"
+      },
+      {
+        "command": "trace-javascript-semantics",
+        "target": "sem-wave-property",
+        "exit": 0,
+        "seconds": 2.2,
+        "result": "27,307 B, sha256 b2bf8a98f2d9"
+      },
+      {
+        "command": "trace-javascript-semantics",
+        "target": "sem-hp-property",
+        "exit": 0,
+        "seconds": 2.0,
+        "result": "47,178 B, sha256 7e0361042492"
+      }
+    ]
+  },
+  "features": [
+    {
+      "name": "적 생성(판별 웨이브 표)",
+      "upstream_how": "WaveManager: 웨이브 번호로 간격·체력·종류, spawnEnemy 화면 네 변 바깥",
+      "evidence": "trace-summaries.json(sem-spawnTimer-property, sem-wave-property)",
+      "status": "implemented",
+      "commits": [],
+      "note": "플레이어 둘레 원 바깥, 너무 먼 적은 앞쪽으로 옮김, 최대 900"
+    },
+    {
+      "name": "공간 격자 충돌",
+      "upstream_how": "updateSystems 에서 적×투사체 전수 거리 비교",
+      "evidence": "trace-summaries.json(sem-hp-property 649·660행)",
+      "status": "implemented",
+      "commits": [],
+      "note": "64px 칸, 계수 정렬 재구성, 적끼리 밀기도 격자"
+    },
+    {
+      "name": "경험치 보석·끌어당김",
+      "upstream_how": "XpOrb 120px 안이면 끌려옴, checkLevelUp 필요량×1.4",
+      "evidence": "trace-summaries.json(sem-xp-property, sem-xpNeeded-property)",
+      "status": "implemented",
+      "commits": [],
+      "note": "별가루 3단계, 350개 넘으면 합침"
+    },
+    {
+      "name": "레벨업 셋 중 하나",
+      "upstream_how": "UpgradeManager.getThreeOptions 섞어서 앞 셋, apply 가 능력치 변경",
+      "evidence": "app-analysis.summary.json(getThreeOptions 441, apply 446)",
+      "status": "implemented",
+      "commits": [],
+      "note": "가중치, 무기·장신구 6칸, 최대 단계, 다시 뽑기"
+    },
+    {
+      "name": "무기 9종",
+      "upstream_how": "자동 사격 1종(projCount 로 발 수)",
+      "evidence": "trace-summaries.json(sem-projCount-property)",
+      "status": "implemented",
+      "commits": [],
+      "note": "구슬·부채꼴·종 파동·궤도 연·숯불 장판·반딧불 유도·부지깽이·벼락 부적·소금 바람"
+    },
+    {
+      "name": "무기 진화·복주머니",
+      "upstream_how": "없음",
+      "evidence": "—",
+      "status": "implemented",
+      "commits": [],
+      "note": "6단계 + 짝 장신구 + 복주머니 → 진화 8종"
+    },
+    {
+      "name": "시간 제한 판·우두머리",
+      "upstream_how": "끝없는 웨이브, 6웨이브부터 드문 boss",
+      "evidence": "trace-summaries.json(sem-determineEnemyType-callers)",
+      "status": "implemented",
+      "commits": [],
+      "note": "5·6·7분, 마지막 1분 우두머리 돌진"
+    },
+    {
+      "name": "판 3개·열림",
+      "upstream_how": "없음",
+      "evidence": "—",
+      "status": "implemented",
+      "commits": [],
+      "note": "앞 판을 깨면 다음 판"
+    },
+    {
+      "name": "캐릭터 5명",
+      "upstream_how": "없음(Player 하나)",
+      "evidence": "app-analysis.summary.json(Player 153)",
+      "status": "implemented",
+      "commits": [],
+      "note": "2명은 엽전으로 데려옴"
+    },
+    {
+      "name": "영구 강화(localStorage)",
+      "upstream_how": "SaveManager 가 최고 기록·누적 처치만 try/catch 저장",
+      "evidence": "app-analysis.summary.json(SaveManager 29)",
+      "status": "implemented",
+      "commits": [],
+      "note": "엽전 강화 10종·되돌리기"
+    },
+    {
+      "name": "터치 가상 조이스틱·게임패드",
+      "upstream_how": "키보드만",
+      "evidence": "app-analysis.summary.json(listeners)",
+      "status": "implemented",
+      "commits": [],
+      "note": "메뉴도 패드로 이동"
+    },
+    {
+      "name": "치명타",
+      "upstream_how": "critChance 확률 2배 피해",
+      "evidence": "trace-summaries.json(sem-critChance-property)",
+      "status": "hold",
+      "commits": [],
+      "note": ""
+    },
+    {
+      "name": "지형·장애물",
+      "upstream_how": "두 쪽 모두 없음",
+      "evidence": "—",
+      "status": "candidate",
+      "commits": [],
+      "note": ""
+    },
+    {
+      "name": "합성 효과음",
+      "upstream_how": "AudioManager 가 Web Audio 로 매번 합성",
+      "evidence": "app-analysis.summary.json(AudioManager 57)",
+      "status": "implemented",
+      "commits": [],
+      "note": "짧은 합성음 몇 개, 끌 수 있음"
+    }
+  ],
+  "limitations": [
+    "this 를 거친 클래스 메서드 호출을 잇지 못함: 호출자 추적 7개 모두 found 이지만 관계 0",
+    "속성 영향 추적 7개 모두 ambiguous: 같은 이름 속성(hp: 플레이어·적)을 구분하지 못함",
+    "한 파일 전역 스크립트라 모듈 관계 0, 모듈 기준 기능 추적은 노드 7개로 끝남",
+    "수치(필요량 배율·끌어당김 반경·웨이브 길이)는 관계만 보이고 값은 코드를 직접 읽어 확인",
+    "실행하지 않는 정적 분석이라 밀도·손맛·프레임 시간은 알 수 없음 — 자체 시뮬레이션과 헤드리스 스모크로 확인",
+    "앱 분석 원본(4.8 MB)은 저장소에 넣지 않고 크기·SHA-256 만, 로컬 경로는 <target> 으로 바꿈"
+  ],
+  "doc": "docs/rea/void-survivors-analysis.md",
+  "evidence_dir": "docs/rea/evidence"
+}

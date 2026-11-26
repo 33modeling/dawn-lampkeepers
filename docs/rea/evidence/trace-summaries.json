@@ -1,0 +1,330 @@
+{
+ "feature-script": {
+  "status": null,
+  "seed": {
+   "kind": "module",
+   "value": "script.js",
+   "match": "exact",
+   "case_sensitive": false
+  },
+  "summary": {
+   "matched_seeds": 2,
+   "traced_nodes": 7,
+   "traced_edges": 6,
+   "terminal_paths": 3,
+   "native_handoffs": 0,
+   "observed_facts": 10,
+   "inferred_facts": 2,
+   "unknown_facts": 0,
+   "unavailable_facts": 1
+  },
+  "nodes": []
+ },
+ "sem-updateSystems-callers": {
+  "status": "found",
+  "seed": {
+   "kind": "function",
+   "fingerprint_sha256": "365d25ce32874651b7765322efdfa5d8b575699cc993c09e90b4af1342b185da"
+  },
+  "summary": {
+   "total_seed_matches": 1,
+   "traversed_nodes": 1,
+   "traversed_relations": 0,
+   "traversed_functions": 1,
+   "traversed_modules": 1,
+   "relevant_unknowns": 32
+  },
+  "nodes": [
+   "updateSystems@611"
+  ]
+ },
+ "sem-fireWeapon-callers": {
+  "status": "found",
+  "seed": {
+   "kind": "function",
+   "fingerprint_sha256": "3d68923db8a390a20b0f9d9676f540f99c8f5f77d9cda8c000de092b679ea2f4"
+  },
+  "summary": {
+   "total_seed_matches": 1,
+   "traversed_nodes": 1,
+   "traversed_relations": 0,
+   "traversed_functions": 1,
+   "traversed_modules": 1,
+   "relevant_unknowns": 8
+  },
+  "nodes": [
+   "fireWeapon@704"
+  ]
+ },
+ "sem-getThreeOptions-callers": {
+  "status": "found",
+  "seed": {
+   "kind": "function",
+   "fingerprint_sha256": "8ffb47554813414a7f1fda2cef7de0b325453f6f054b6be2201ac81e61ee4960"
+  },
+  "summary": {
+   "total_seed_matches": 1,
+   "traversed_nodes": 1,
+   "traversed_relations": 0,
+   "traversed_functions": 1,
+   "traversed_modules": 1,
+   "relevant_unknowns": 2
+  },
+  "nodes": [
+   "getThreeOptions@441"
+  ]
+ },
+ "sem-apply-callers": {
+  "status": "found",
+  "seed": {
+   "kind": "function",
+   "fingerprint_sha256": "8ed17446e3b0c157ecc93f4eede30359334f66513044eddd42d5e353c1134c0f"
+  },
+  "summary": {
+   "total_seed_matches": 1,
+   "traversed_nodes": 1,
+   "traversed_relations": 0,
+   "traversed_functions": 1,
+   "traversed_modules": 1,
+   "relevant_unknowns": 2
+  },
+  "nodes": [
+   "apply@446"
+  ]
+ },
+ "sem-determineEnemyType-callers": {
+  "status": "found",
+  "seed": {
+   "kind": "function",
+   "fingerprint_sha256": "b0823bffb54233959db2e9b8e612b3445b0a305536020678d8dc2044e9559f3f"
+  },
+  "summary": {
+   "total_seed_matches": 1,
+   "traversed_nodes": 1,
+   "traversed_relations": 0,
+   "traversed_functions": 1,
+   "traversed_modules": 1,
+   "relevant_unknowns": 1
+  },
+  "nodes": [
+   "determineEnemyType@484"
+  ]
+ },
+ "sem-getSpawnInterval-callers": {
+  "status": "found",
+  "seed": {
+   "kind": "function",
+   "fingerprint_sha256": "de330f6596db8c36cdef4046d79eaa8afa106cd1573d73bd8cfed3cfaf0d5983"
+  },
+  "summary": {
+   "total_seed_matches": 1,
+   "traversed_nodes": 1,
+   "traversed_relations": 0,
+   "traversed_functions": 1,
+   "traversed_modules": 1,
+   "relevant_unknowns": 1
+  },
+  "nodes": [
+   "getSpawnInterval@476"
+  ]
+ },
+ "sem-spawnEnemy-callers": {
+  "status": "found",
+  "seed": {
+   "kind": "function",
+   "fingerprint_sha256": "c4704165ead45a4fc3b38bb16c6115e7856ec6646bc02bba2c6cf9b543f3beb6"
+  },
+  "summary": {
+   "total_seed_matches": 1,
+   "traversed_nodes": 1,
+   "traversed_relations": 0,
+   "traversed_functions": 1,
+   "traversed_modules": 1,
+   "relevant_unknowns": 9
+  },
+  "nodes": [
+   "spawnEnemy@740"
+  ]
+ },
+ "sem-xp-property": {
+  "status": "ambiguous",
+  "seed": {
+   "kind": "property",
+   "name": "xp"
+  },
+  "summary": {
+   "total_seed_matches": 7,
+   "traversed_nodes": 7,
+   "traversed_relations": 2,
+   "traversed_functions": 4,
+   "traversed_modules": 1,
+   "relevant_unknowns": 9
+  },
+  "nodes": [
+   "read:/player/xp@684",
+   "read:/player/xp@760",
+   "read:/player/xp@761",
+   "read:/player/xp@832",
+   "write:/player/xp@684",
+   "write:/player/xp@761",
+   "write:/xp@174"
+  ]
+ },
+ "sem-xpNeeded-property": {
+  "status": "ambiguous",
+  "seed": {
+   "kind": "property",
+   "name": "xpNeeded"
+  },
+  "summary": {
+   "total_seed_matches": 6,
+   "traversed_nodes": 7,
+   "traversed_relations": 2,
+   "traversed_functions": 3,
+   "traversed_modules": 1,
+   "relevant_unknowns": 9
+  },
+  "nodes": [
+   "read:/player/xpNeeded@760",
+   "read:/player/xpNeeded@761",
+   "read:/player/xpNeeded@763",
+   "read:/player/xpNeeded@832",
+   "write:/player/xp@761",
+   "write:/player/xpNeeded@763",
+   "write:/xpNeeded@175"
+  ]
+ },
+ "sem-projCount-property": {
+  "status": "ambiguous",
+  "seed": {
+   "kind": "property",
+   "name": "projCount"
+  },
+  "summary": {
+   "total_seed_matches": 5,
+   "traversed_nodes": 7,
+   "traversed_relations": 3,
+   "traversed_functions": 3,
+   "traversed_modules": 1,
+   "relevant_unknowns": 7
+  },
+  "nodes": [
+   "projCount@None",
+   "read:/player/projCount@725",
+   "read:/player/projCount@729",
+   "read:/player/projCount@730",
+   "read:/projCount@454",
+   "write:/projCount@168",
+   "write:/projCount@454"
+  ]
+ },
+ "sem-critChance-property": {
+  "status": "ambiguous",
+  "seed": {
+   "kind": "property",
+   "name": "critChance"
+  },
+  "summary": {
+   "total_seed_matches": 3,
+   "traversed_nodes": 5,
+   "traversed_relations": 3,
+   "traversed_functions": 3,
+   "traversed_modules": 1,
+   "relevant_unknowns": 5
+  },
+  "nodes": [
+   "critChance@None",
+   "read:/critChance@455",
+   "read:/player/critChance@721",
+   "write:/critChance@169",
+   "write:/critChance@455"
+  ]
+ },
+ "sem-spawnTimer-property": {
+  "status": "ambiguous",
+  "seed": {
+   "kind": "property",
+   "name": "spawnTimer"
+  },
+  "summary": {
+   "total_seed_matches": 5,
+   "traversed_nodes": 5,
+   "traversed_relations": 1,
+   "traversed_functions": 2,
+   "traversed_modules": 1,
+   "relevant_unknowns": 6
+  },
+  "nodes": [
+   "read:/waves/spawnTimer@628",
+   "read:/waves/spawnTimer@629",
+   "write:/spawnTimer@465",
+   "write:/waves/spawnTimer@628",
+   "write:/waves/spawnTimer@631"
+  ]
+ },
+ "sem-wave-property": {
+  "status": "ambiguous",
+  "seed": {
+   "kind": "property",
+   "name": "wave"
+  },
+  "summary": {
+   "total_seed_matches": 9,
+   "traversed_nodes": 11,
+   "traversed_relations": 2,
+   "traversed_functions": 7,
+   "traversed_modules": 1,
+   "relevant_unknowns": 13
+  },
+  "nodes": [
+   "read:/wave@471",
+   "read:/wave@477",
+   "read:/wave@481",
+   "read:/wave@486",
+   "read:/wave@487",
+   "read:/waves/wave@823",
+   "read:/waves/wave@852",
+   "write:/innerText@823",
+   "write:/innerText@852",
+   "write:/wave@462",
+   "write:/wave@471"
+  ]
+ },
+ "sem-hp-property": {
+  "status": "ambiguous",
+  "seed": {
+   "kind": "property",
+   "name": "hp"
+  },
+  "summary": {
+   "total_seed_matches": 15,
+   "traversed_nodes": 20,
+   "traversed_relations": 9,
+   "traversed_functions": 7,
+   "traversed_modules": 1,
+   "relevant_unknowns": 24
+  },
+  "nodes": [
+   "argument 0@830",
+   "hp@None",
+   "read:/hp@199",
+   "read:/hp@203",
+   "read:/hp@281",
+   "read:/hp@287",
+   "read:/hp@660",
+   "read:/hp@667",
+   "read:/player/hp@649",
+   "read:/player/hp@650",
+   "read:/player/hp@764",
+   "read:/player/hp@828",
+   "read:/player/hp@830",
+   "write:/hp@161",
+   "write:/hp@203",
+   "write:/hp@257",
+   "write:/hp@660",
+   "write:/innerText@830",
+   "write:/player/hp@649",
+   "write:/player/hp@764"
+  ]
+ }
+}
